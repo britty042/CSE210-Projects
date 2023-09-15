@@ -35,7 +35,7 @@ class Program
 
         if (number > 70)
         {
-            Console.WriteLine($"Congrats!  You passed!");
+            Console.WriteLine("Congrats!  You passed!");
         }
         else
         {
