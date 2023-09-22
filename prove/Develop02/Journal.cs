@@ -32,6 +32,7 @@ class Journal
         _entries.Clear();
 
         string[] linesFromFile = System.IO.File.ReadAllLines(fileName);
+        
         foreach(string currentLine in linesFromFile)
         {
             string[] splitLine = currentLine.Split("|");
