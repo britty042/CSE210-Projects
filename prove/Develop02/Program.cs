@@ -27,7 +27,7 @@ public class Program
                 Console.WriteLine(prompt);
                 Console.Write("> ");
                 string entryResponse = Console.ReadLine();
-                Console.WriteLine("What are you most grateful for today");
+                Console.WriteLine("What are you most grateful for today? ");
                 Console.Write(">");
                 string gratitudeResponse = Console.ReadLine();
 
