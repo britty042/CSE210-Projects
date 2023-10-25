@@ -2,18 +2,16 @@ public class Receptions : Event
 {
     private string _email;
 
-    public Receptions(string email) : base()
+    public Receptions(string email, string title, string description, string date, string time, Address address) : base(title, description, date, time, address)
     {
-        _title = "Emry & Lawson Wedding";
-        _description = "Reception held after temple ceremony.  Theme: simple & elegant";
-        _date = "12/07/2023";
-        _time = "6:00-8:00 PM";
         _email = email;
     }
 
-   
-
-
-
-
+   public void DisplayFullDetails()
+    {
+        Console.WriteLine("\nFull Details:");
+        DisplayStandardInfo();
+        //For receptions this includes an email for RSVP.
+        Console.WriteLine($"RSVP {_email}");
+    }
 }
